@@ -1,11 +1,17 @@
 {
 	"scripts": {
 		"dev-server": "node server.js",
+		"check-all": "npm run format-code && npm run lint-styles && npm run lint-scripts",
 		"format-code": "prettier  --check --write \"public/**\"",
-		"lint-styles": "stylelint \"public/styles/**/*.css\"",
-		"fix-styles": "stylelint \"public/styles/**/*.css\" --fix"
+		"lint-styles": "stylelint \"public/styles/**/*.css\" --fix",
+		"lint-scripts": "eslint \"public/scripts/**/*.js\" --fix"
 	},
 	"devDependencies": {
+		"eslint": "^8.23.1",
+		"eslint-config-standard": "^17.0.0",
+		"eslint-plugin-import": "^2.26.0",
+		"eslint-plugin-n": "^15.3.0",
+		"eslint-plugin-promise": "^6.0.1",
 		"live-server": "^1.1.0",
 		"prettier": "2.7.1",
 		"stylelint": "^14.12.1",
