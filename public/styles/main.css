@@ -10,7 +10,7 @@
    gap-bottom: 102px
 */
 
-/*COMMON*/
+/* COMMON */
 html {
 	font-family: Arial, Helvetica, sans-serif;
 }
@@ -24,28 +24,34 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 }
+
 .news-page-block {
 	margin-top: 41px;
 	margin-bottom: 102px;
 }
-/*NEWS HEADER*/
+
+/* NEWS HEADER */
 .news-header {
 	margin-bottom: 50px;
 }
+
 .news-header h1 {
 	margin-bottom: 44px;
 	font-size: 36px;
 	line-height: 48px;
 }
+
 .news-header time {
 	font-size: 12px;
 	line-height: 16px;
 	color: #959cad;
 }
-/*NEWS CONTENT*/
+
+/* NEWS CONTENT */
 .news-content figure {
 	margin: 50px 0;
 }
+
 .news-content h2,
 .news-content .accent-text {
 	font-weight: 700;
@@ -54,35 +60,41 @@ body {
 	margin: 40px 0;
 	color: #000;
 }
+
 .news-content p {
 	font-size: 15px;
 	line-height: 20px;
 	color: #7d7e80;
 	margin: 20px 0;
 }
+
 .news-content li {
 	font-size: 15px;
 	line-height: 20px;
 	color: #7d7e80;
 	margin-bottom: 20px;
 }
-/*Убрал точки после нумерации что бы список совпадал с макетом*/
+
+/* Убрал точки после нумерации что бы список совпадал с макетом */
 .news-content ol {
 	list-style-type: none; /* Убрал исходные маркеры */
 	counter-reset: my-counter; /* Задал имя счетчика */
-	padding: 0; /*Убрал отступы чтобы список прилип к левому краю контейнера*/
+	padding: 0; /* Убрал отступы чтобы список прилип к левому краю контейнера */
 }
+
 .news-content ol li::before {
 	content: counter(my-counter); /* Вывел число */
 	counter-increment: my-counter; /* Увеличил значение счётчика */
-	padding-right: 20px; /*отступ от нумерации*/
+	padding-right: 20px; /* отступ от нумерации */
 }
+
 .news-content ul {
 	padding-left: 20px;
 }
+
 .news-content blockquote {
 	font-style: italic;
 	font-size: 22px;
 	line-height: 32px;
-	margin: 40px 0 0 0;
+	margin: 40px 0 0;
 }
