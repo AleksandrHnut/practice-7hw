@@ -1,8 +1,10 @@
 {
-  "scripts": {
-    "dev-server": "node server.js"
-  },
-  "devDependencies": {
-    "live-server": "^1.1.0"
-  }
+	"scripts": {
+		"dev-server": "node server.js",
+		"format-code": "prettier  --check --write \"public/**\""
+	},
+	"devDependencies": {
+		"live-server": "^1.1.0",
+		"prettier": "2.7.1"
+	}
 }
